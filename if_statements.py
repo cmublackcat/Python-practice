@@ -68,7 +68,42 @@ else:
 
 
 # 6.
-# 如果 妳考100分 或 今天沒有下雨
+# 如果 妳考100分 或 沒有下雨
 #     我給妳1000元
 # 否則
 #     妳給我100元
+SCOre = 100
+RAIny = False
+if SCOre==100 or not (RAIny):
+    print("我給妳1000元")
+else:
+    print("妳給我100元")
+
+# 7.
+# 如果 妳沒有考100分 或 沒有下雨
+#     我給妳1000元
+# 否則
+#     妳給我100元
+SCORe = 100
+RAINY = True
+if SCORe!=100 or not (RAINY):
+    print("我給妳1000元")
+else:
+    print("妳給我100元")
+
+
+
+# 練習:
+# 今天要做一個函式max_num，這個函示要傳入三個參數，會回傳出最大的參數
+def max_num():
+    num1 = input("輸入第一個數字: ")
+    num2 = input("輸入第二個數字: ")
+    num3 = input("輸入第三個數字: ")
+    if num1>=num2 and num1>=num3:
+        return num1
+    elif num2>=num1 and num2>=num3:
+        return num2
+    else:
+        return num3
+print(max_num())
+
